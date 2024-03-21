@@ -61,6 +61,7 @@ body {
   display: flex;
   margin-top: -45px;
   margin-left: 50px;
+  font-weight: bolder;
 }
 
 .attribution {
