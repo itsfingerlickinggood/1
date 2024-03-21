@@ -10,7 +10,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](assets\images\screenshot.png)
+![](./screenshot.png)
 
 ### Links
 
