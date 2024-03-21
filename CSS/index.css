@@ -1,60 +1,68 @@
 body {
+  background-color: hsl(47, 88%, 63%);
   margin: 0;
   padding: 0;
-  background-color: rgb(18, 18, 18);
+  font-size: 16px;
 }
 .main {
-  background-color: rgb(31, 28, 28);
-  color: white;
-  width: 350px;
-  height: 560px;
-  border-radius: 15px;
-  text-align: center;
+  background-color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Ysabeau Infant", sans-serif;
+  width: 380px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 8px 8px 0px 0px rgb(0, 0, 0);
+  font-family: "NTR";
 }
-.main img {
+.main .image1 {
   display: block;
-  border-radius: 50%;
-  margin: 30px auto;
-  height: 80px;
+  margin: 20px auto;
+  border-radius: 10px;
 }
-
-.button {
-  width: 300px;
-  height: 42px;
-  background-color: rgb(65, 60, 60);
-  color: white;
-  margin: 8px 0;
-  border-radius: 8px;
-  box-shadow: none;
-  border: 0;
-  box-shadow: none;
-  outline: none;
+.text1 {
+  margin-left: -250px;
+  background-color: hsl(47, 88%, 63%);
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  border: none;
+  padding: 0px 15px;
+  border-radius: 5px;
+  font-weight: 900;
+}
+.text2 {
+  margin-left: -190px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.text3 {
+  text-align: left;
+  margin-left: 23px;
+  margin-top: -50px;
+  font-size: 30px;
   font-weight: bolder;
-  cursor: pointer;
 }
-.name {
-  font-size: 2rem;
-  margin-top: -10px;
+.text4 {
+  text-align: left;
+  margin-left: 20px;
 }
-.place {
-  color: hsl(75, 94%, 57%);
+.text5 {
+  text-align: left;
+  margin-left: 20px;
+  margin: 20px;
 }
-.info {
-  margin-bottom: 15px;
+.text5 img {
+  width: 35px;
+}
+.text6 {
+  display: flex;
+  margin-top: -45px;
+  margin-left: 50px;
 }
 
 .attribution {
-  margin-top: 100px;
-  font-family: monospace;
-}
-@media screen and (max-width: 768px) {
-  .main {
-    min-width: 300px;
-    min-height: 500px;
-  }
+  margin-top: 38%;
 }

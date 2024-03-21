@@ -1,7 +1,6 @@
-# Frontend Mentor - Social links profile solution
+# Frontend Mentor - Blog preview card solution
 
-This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ### The challenge
 
@@ -11,7 +10,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/screenshot.png)
+![](assets\images\screenshot.png)
 
 ### Links
 
@@ -22,12 +21,12 @@ Users should be able to:
 
 ### Built with
 
-- HTML
+- HTML5
 - CSS 
 
 ### What I learned
 
-Learned about buttons and links 
+CSS box shadow and Custom styling for elements
 
 ### Useful resources
 
@@ -35,5 +34,4 @@ Learned about buttons and links
 
 ## Author
 
-- Frontend Mentor - (sonu)
-
+- Website - [Sonu]
