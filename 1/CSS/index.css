@@ -1,0 +1,101 @@
+body {
+  background-color: rgb(250, 233, 218);
+  margin: 0;
+  padding: 80px;
+  font-family: "Outfit", sans-serif;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main {
+  width: 600px;
+  margin: auto;
+  padding: 50px;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 15px;
+}
+.main .inside1 {
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 20px 0;
+}
+.main .inside1 h2 {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  font-weight: 650;
+}
+
+.main .img1 {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.flex-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #000; /* Single border for separating rows */
+}
+
+.flex-row:last-child {
+  border-bottom: none; /* Remove border from the last row */
+}
+
+.flex-cell {
+  flex: 1; /* Distribute space evenly */
+  text-align: center; /* Center the content */
+  display: flex;
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  margin-left: -200px;
+}
+
+/* Additional styling to remove gap between cells */
+.flex-cell:not(:last-child) {
+  border-right: none;
+}
+.attribution {
+  font-family: monospace;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+li {
+  padding-left: 20px;
+  margin-left: -10px;
+  padding: 5px 0;
+}
+.indent1 {
+  padding-left: 50px;
+}
+
+.nutmeg-color {
+  color: hsl(14, 45%, 36%);
+}
+
+.flex-table {
+  font-size: 1rem;
+  padding: 5px 0;
+}
+
+.bold2 {
+  color: hsl(14, 45%, 36%);
+  font-weight: 650;
+}
+.flex-row {
+  padding: 15px;
+}
