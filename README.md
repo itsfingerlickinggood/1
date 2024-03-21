@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/itsfingerlickinggood/2)
-- Live Site URL: [Live site URL](https://itsfingerlickinggood.github.io/2/)
+- Solution URL: [Solution URL](https://github.com/itsfingerlickinggood/1)
+- Live Site URL: [Live site URL](https://itsfingerlickinggood.github.io/1/)
 
 ## My process
 
