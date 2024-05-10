@@ -1,77 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
-  background-color: hsl(47, 88%, 63%);
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-}
-.main {
-  background-color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 380px;
-  height: 500px;
-  border: 2px solid black;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 8px 8px 0px 0px rgb(0, 0, 0);
-  font-family: "NTR";
-}
-.main .image1 {
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px;
-}
-.text1 {
-  margin-left: -250px;
-  background-color: hsl(47, 88%, 63%);
-  color: rgb(0, 0, 0);
-  display: inline-block;
-  border: none;
-  padding: 0px 15px;
-  border-radius: 5px;
-  font-weight: 900;
-}
-.text2 {
-  margin-left: -190px;
-  font-weight: 600;
-  margin-top: 5px;
-}
-.text3 {
-  text-align: left;
-  margin-left: 23px;
-  margin-top: -50px;
-  font-size: 30px;
-  font-weight: bolder;
-}
-.text4 {
-  text-align: left;
-  margin-left: 20px;
-}
-.text5 {
-  text-align: left;
-  margin-left: 20px;
-  margin: 20px;
-}
-.text5 img {
-  width: 35px;
-}
-.text6 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  background-color: hsl(275, 100%, 97%);
+  margin: 0px;
+  padding: 0px;
   display: flex;
-  margin-top: -45px;
-  margin-left: 50px;
-  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+}
+.bgimg {
+  min-width: 100%;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 600px;
+  height: fit-content;
+  top: 30%;
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: -80px;
+}
+
+.title {
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.title img {
+  height: 45px;
+  margin-bottom: -3px;
+  margin-right: 5px;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  margin-left: -8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.answer {
+  font-weight: 350;
+}
+
+.plus-button,
+.plus-minus {
+  position: absolute;
+  left: 89%;
+  height: 35px;
+  cursor: pointer;
 }
 
 .attribution {
-  margin-top: 38%;
+  position: absolute;
+  bottom: 3%;
 }
 
-.main:hover{
-  background-color: black;
-  color: white;
-  box-shadow: 8px 8px 0 0 white;
-  transition: all 0.7s ease-in-out;
-  border: 2px solid blue;
+.plus-button {
+  z-index: 1;
+}
+
+.answer,
+.plus-minus {
+  display: none;
+}
+
+.break-line {
+  border: 0.5px solid rgba(0, 0, 0, 0.074);
 }

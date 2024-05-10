@@ -3,50 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="CSS/index.css" />
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
-    <title>Frontend Mentor | Blog preview card</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=NTR&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="CSS/index.css" />
+    <title>Frontend Mentor | FAQ accordion</title>
   </head>
   <body>
-    <div class="main">
-      <img src="assets/images/illustration-article.svg" alt="" class="image1" />
-      <div class="text1">Learning</div>
-      <div class="text2">Published 21 Dec 2023</div>
+    <img
+      src="/assets/images/background-pattern-desktop.svg"
+      alt=""
+      class="bgimg"
+    />
+    <div class="container">
+      <div class="title">
+        <img src="/assets/images/icon-star.svg" alt="" />
+        FAQs
+      </div>
       <br />
-      <div class="text3">HTML & CSS foundations</div>
-      <div class="text4">
-        These languages are the backbone of every website, defining structure,
-        content, and presentation.
-      </div>
+      <div class="qa">
+        <div class="a1">
+          <div class="question">
+            What is Frontend Mentor, and how will it help me?
+            <img
+              src="/assets/images/icon-plus.svg"
+              alt=""
+              class="plus-button"
+            />
+            <img
+              src="/assets/images/icon-minus.svg"
+              alt=""
+              class="plus-minus"
+            />
+          </div>
+          <div class="answer">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </div>
+        </div>
+        <br />
+        <div class="break-line"></div>
+        <div class="a2">
+          <div class="question">
+            Is Frontend Mentor free?
+            <img
+              src="/assets/images/icon-plus.svg"
+              alt=""
+              class="plus-button"
+            />
+            <img
+              src="/assets/images/icon-minus.svg"
+              alt=""
+              class="plus-minus"
+            />
+          </div>
+          <div class="answer">
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </div>
+        </div>
 
-      <div class="text5">
-        <img src="assets/images/image-avatar.webp" alt="" />
-        <span class="text6">Greg Hooper</span>
-      </div>
-      <div class="attribution">
-        Challenge by Frontend Mentor. Coded by
-        <a
-          href="https://github.com/itsfingerlickinggood"
-          target="_blank"
-          rel="noopener"
-          >Sonu</a
-        >.
+        <br />
+        <div class="break-line"></div>
+        <div class="a3">
+          <div class="question">
+            Can I use Frontend Mentor projects in my portfolio?
+            <img
+              src="/assets/images/icon-plus.svg"
+              alt=""
+              class="plus-button"
+            />
+            <img
+              src="/assets/images/icon-minus.svg"
+              alt=""
+              class="plus-minus"
+            />
+          </div>
+          <div class="answer">
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </div>
+        </div>
+
+        <br />
+        <div class="break-line"></div>
+        <div class="a4">
+          <div class="question">
+            How can I get help if I'm stuck on a challenge?
+            <img
+              src="/assets/images/icon-plus.svg"
+              alt=""
+              class="plus-button"
+            />
+            <img
+              src="/assets/images/icon-minus.svg"
+              alt=""
+              class="plus-minus"
+            />
+          </div>
+          <div class="answer">
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </div>
+        </div>
       </div>
     </div>
+    <div class="attribution">
+      Challenge by Frontend Mentor . Coded by <a href="#">X</a>.
+    </div>
+    <script>
+      document.querySelectorAll(".question").forEach((question) => {
+        const plus = question.querySelector(".plus-button");
+        const minus = question.querySelector(".plus-minus");
+        const answer = question.nextElementSibling;
+
+        plus.addEventListener("click", () => {
+          answer.style.display = "block";
+          plus.style.display = "none";
+          minus.style.display = "inline-block";
+        });
+
+        minus.addEventListener("click", () => {
+          answer.style.display = "none";
+          plus.style.display = "inline-block";
+          minus.style.display = "none";
+        });
+      });
+    </script>
   </body>
 </html>
