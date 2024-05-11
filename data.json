@@ -2,21 +2,21 @@
   {
     "category": "Reaction",
     "score": 80,
-    "icon": "assets/images/icon-reaction.svg"
+    "icon": "https://raw.githubusercontent.com/itsfingerlickinggood/1/c90f2926d6f8e5f5d33c6f92bc9e3f354e291f21/assets/images/icon-reaction.svg"
   },
   {
     "category": "Memory",
     "score": 92,
-    "icon": "assets/images/icon-memory.svg"
+    "icon": "https://raw.githubusercontent.com/itsfingerlickinggood/1/c90f2926d6f8e5f5d33c6f92bc9e3f354e291f21/assets/images/icon-memory.svg"
   },
   {
     "category": "Verbal",
     "score": 61,
-    "icon": "assets/images/icon-verbal.svg"
+    "icon": "https://raw.githubusercontent.com/itsfingerlickinggood/1/c90f2926d6f8e5f5d33c6f92bc9e3f354e291f21/assets/images/icon-verbal.svg"
   },
   {
     "category": "Visual",
     "score": 72,
-    "icon": "assets/images/icon-visual.svg"
+    "icon": "https://raw.githubusercontent.com/itsfingerlickinggood/1/c90f2926d6f8e5f5d33c6f92bc9e3f354e291f21/assets/images/icon-visual.svg"
   }
 ]
