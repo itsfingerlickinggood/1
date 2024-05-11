@@ -9,7 +9,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="/CSS/index.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
     <title>Frontend Mentor | Results summary component</title>
 
     <style></style>
@@ -49,7 +49,7 @@
     </div>
   </body>
   <script>
-    fetch("data/data.json")
+    fetch("./data/data.json")
       .then((response) => response.json())
       .then((data) => {
         data.forEach((item, index) => {
