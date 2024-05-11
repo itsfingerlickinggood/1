@@ -57,11 +57,11 @@
           const uniqueClassName = `tile-${index}`;
           div.classList.add(uniqueClassName);
           div.innerHTML = `
-                        <div class="tiles">
-                            <img src="${item.icon}" alt="${item.category}">
-                            <span class="word">${item.category}</span> <span class="mark">${item.score} <span class="marks-grey">/ 100</span></span>
-                        </div>
-                    `;
+                    <div class="tiles">
+                        <img src="${item.icon}" alt="${item.category}">
+                        <span class="word">${item.category}</span> <span class="mark">${item.score} <span class="marks-grey">/ 100</span></span>
+                    </div>
+                `;
           document.getElementById("data").appendChild(div);
         });
       })
