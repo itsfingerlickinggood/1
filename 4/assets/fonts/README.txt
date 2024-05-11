@@ -1,20 +1,36 @@
-Hanken Grotesk Variable Font
-============================
+Work Sans Variable Font
+=======================
 
-This download contains Hanken Grotesk as both variable fonts and static fonts.
+This download contains Work Sans as both variable fonts and static fonts.
 
-Hanken Grotesk is a variable font with this axis:
+Work Sans is a variable font with this axis:
   wght
 
 This means all the styles are contained in these files:
-  HankenGrotesk-VariableFont_wght.ttf
+  WorkSans-VariableFont_wght.ttf
+  WorkSans-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Hanken Grotesk:
-  static/HankenGrotesk-Medium.ttf
-  static/HankenGrotesk-Bold.ttf
-  static/HankenGrotesk-ExtraBold.ttf
+in those cases you can use the static font files for Work Sans:
+  static/WorkSans-Thin.ttf
+  static/WorkSans-ExtraLight.ttf
+  static/WorkSans-Light.ttf
+  static/WorkSans-Regular.ttf
+  static/WorkSans-Medium.ttf
+  static/WorkSans-SemiBold.ttf
+  static/WorkSans-Bold.ttf
+  static/WorkSans-ExtraBold.ttf
+  static/WorkSans-Black.ttf
+  static/WorkSans-ThinItalic.ttf
+  static/WorkSans-ExtraLightItalic.ttf
+  static/WorkSans-LightItalic.ttf
+  static/WorkSans-Italic.ttf
+  static/WorkSans-MediumItalic.ttf
+  static/WorkSans-SemiBoldItalic.ttf
+  static/WorkSans-BoldItalic.ttf
+  static/WorkSans-ExtraBoldItalic.ttf
+  static/WorkSans-BlackItalic.ttf
 
 Get started
 -----------
@@ -52,3 +68,14 @@ Android Apps
 
   https://developers.google.com/fonts/docs/android
   https://developer.android.com/guide/topics/ui/look-and-feel/downloadable-fonts
+
+License
+-------
+Please read the full license text (OFL.txt) to understand the permissions,
+restrictions and requirements for usage, redistribution, and modification.
+
+You can use them in your products & projects – print or digital,
+commercial or otherwise.
+
+This isn't legal advice, please consider consulting a lawyer and see the full
+license for all details.

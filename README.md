@@ -1,18 +1,19 @@
-# Frontend Mentor - FAQ accordion solution
+# Frontend Mentor - Results summary component solution
 
-This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Frontend Mentor - FAQ accordion solution](#frontend-mentor---faq-accordion-solution)
+- [Frontend Mentor - Results summary component solution](#frontend-mentor---results-summary-component-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
     - [Links](#links)
-  - [My process](#my-process)
     - [Built with](#built-with)
     - [Useful resources](#useful-resources)
+
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -20,27 +21,27 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 
 Users should be able to:
 
-- Hide/Show the answer to a question when the question is clicked
-- Navigate the questions and hide/show answers using keyboard navigation alone
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
+- Use the local JSON data to dynamically populate the content
 
 ### Screenshot
 
-![](./assets/images/screenshot.png)
+![](./assets/images/Screenshot%202024-05-11%20at%2014-09-11%20Frontend%20Mentor%20Results%20summary%20component.png) 
 
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/itsfingerlickinggood/1)
 - Live Site URL: [Live site URL](https://itsfingerlickinggood.github.io/1/)
 
-## My process
+
 
 ### Built with
 
 - HTML
 - CSS
-  
+- JS
+
 ### Useful resources
 
-- [Example resource 1](https://www.openai.com) - ChatGPT
+- [Resource 1](https://www.openai.com) - ChatGPT

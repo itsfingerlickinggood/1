@@ -3,109 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="CSS/index.css" />
-    <title>Frontend Mentor | FAQ accordion</title>
+    <link rel="stylesheet" href="/index.css" />
+    <title>Frontend Mentor | Results summary component</title>
+
+    <style></style>
   </head>
   <body>
-    <img
-      src="assets/images/background-pattern-desktop.svg"
-      alt=""
-      class="bgimg"
-    />
     <div class="container">
-      <div class="title">
-        <img src="assets/images/icon-star.svg" alt="" />
-        FAQs
+      <div class="box1">
+        <div class="b1-1">Your Result</div>
+        <div class="circle">
+          <div class="b1-2">76</div>
+          <div class="b1-3">of 100</div>
+        </div>
+        <div class="text-full">
+          <div class="b1-4">Great</div>
+          <div class="b1-5">You scored higher than 65% of</div>
+          <div class="b1-6">the people who have taken</div>
+          <div class="b1-7">these tests.</div>
+        </div>
       </div>
-      <br />
-      <div class="qa">
-        <div class="a1">
-          <div class="question">
-            What is Frontend Mentor, and how will it help me?
-            <img src="assets/images/icon-plus.svg" alt="" class="plus-button" />
-            <img src="assets/images/icon-minus.svg" alt="" class="plus-minus" />
-          </div>
-          <div class="answer">
-            Frontend Mentor offers realistic coding challenges to help
-            developers improve their frontend coding skills with projects in
-            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
-            for portfolio building.
-          </div>
-        </div>
-        <br />
-        <div class="break-line"></div>
-        <div class="a2">
-          <div class="question">
-            Is Frontend Mentor free?
-            <img src="assets/images/icon-plus.svg" alt="" class="plus-button" />
-            <img src="assets/images/icon-minus.svg" alt="" class="plus-minus" />
-          </div>
-          <div class="answer">
-            Yes, Frontend Mentor offers both free and premium coding challenges,
-            with the free option providing access to a range of projects
-            suitable for all skill levels.
-          </div>
-        </div>
-
-        <br />
-        <div class="break-line"></div>
-        <div class="a3">
-          <div class="question">
-            Can I use Frontend Mentor projects in my portfolio?
-            <img src="assets/images/icon-plus.svg" alt="" class="plus-button" />
-            <img src="assets/images/icon-minus.svg" alt="" class="plus-minus" />
-          </div>
-          <div class="answer">
-            Yes, you can use projects completed on Frontend Mentor in your
-            portfolio. It's an excellent way to showcase your skills to
-            potential employers!
-          </div>
-        </div>
-
-        <br />
-        <div class="break-line"></div>
-        <div class="a4">
-          <div class="question">
-            How can I get help if I'm stuck on a challenge?
-            <img src="assets/images/icon-plus.svg" alt="" class="plus-button" />
-            <img src="assets/images/icon-minus.svg" alt="" class="plus-minus" />
-          </div>
-          <div class="answer">
-            The best place to get help is inside Frontend Mentor's Discord
-            community. There's a help channel where you can ask questions and
-            seek support from other community members.
-          </div>
+      <div class="box2">
+        <div class="b2-1">Summary</div>
+        <div id="data"></div>
+        <div class="continue-button">
+          <button type="button">Continue</button>
         </div>
       </div>
     </div>
+
     <div class="attribution">
-      Challenge by Frontend Mentor . Coded by <a href="#">X</a>.
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">X</a>.
     </div>
-    <script>
-      document.querySelectorAll(".question").forEach((question) => {
-        const plus = question.querySelector(".plus-button");
-        const minus = question.querySelector(".plus-minus");
-        const answer = question.nextElementSibling;
-
-        plus.addEventListener("click", () => {
-          answer.style.display = "block";
-          plus.style.display = "none";
-          minus.style.display = "inline-block";
-        });
-
-        minus.addEventListener("click", () => {
-          answer.style.display = "none";
-          plus.style.display = "inline-block";
-          minus.style.display = "none";
-        });
-      });
-    </script>
   </body>
+  <script>
+    fetch("data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        data.forEach((item, index) => {
+          const div = document.createElement("div");
+          const uniqueClassName = `tile-${index}`;
+          div.classList.add(uniqueClassName);
+          div.innerHTML = `
+                        <div class="tiles">
+                            <img src="${item.icon}" alt="${item.category}">
+                            <span class="word">${item.category}</span> <span class="mark">${item.score} <span class="marks-grey">/ 100</span></span>
+                        </div>
+                    `;
+          document.getElementById("data").appendChild(div);
+        });
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  </script>
 </html>
