@@ -7,66 +7,39 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./CSS/index.css" />
-    <title>Frontend Mentor | Results summary component</title>
-
-    <style></style>
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
     <div class="container">
       <div class="box1">
-        <div class="b1-1">Your Result</div>
-        <div class="circle">
-          <div class="b1-2">76</div>
-          <div class="b1-3">of 100</div>
-        </div>
-        <div class="text-full">
-          <div class="b1-4">Great</div>
-          <div class="b1-5">You scored higher than 65% of</div>
-          <div class="b1-6">the people who have taken</div>
-          <div class="b1-7">these tests.</div>
-        </div>
+        <img src="/images/image-product-desktop.jpg" alt="" />
       </div>
       <div class="box2">
-        <div class="b2-1">Summary</div>
-        <div id="data"></div>
-        <div class="continue-button">
-          <button type="button">Continue</button>
+        <div class="b2-1 lang1">PERFUME</div>
+        <div class="b2-2 lang2">
+          <div class="h1-1">Gabrielle</div>
+          <div class="h1-2">Essence Eau</div>
+          <div class="h1-3">De Parfum</div>
         </div>
+        <div class="b2-3 lang1">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </div>
+        <div class="b2-4 lang2">
+          <span class="discount-price">$149.99</span>
+          <span class="full-price">$169.99</span>
+        </div>
+        <button type="button" class="button lang1">
+          <img src="/images/icon-cart.svg" alt="" /> Add to Cart
+        </button>
       </div>
     </div>
-
     <div class="attribution">
-      Challenge by
-      <a
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        rel="noopener"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">X</a>.
+      Challenge by Frontend Mentor. Coded by
+      <a href="#">X</a>.
     </div>
   </body>
-  <script>
-    fetch("data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        data.forEach((item, index) => {
-          const div = document.createElement("div");
-          const uniqueClassName = `tile-${index}`;
-          div.classList.add(uniqueClassName);
-          div.innerHTML = `
-                    <div class="tiles">
-                        <img src="${item.icon}" alt="${item.category}">
-                        <span class="word">${item.category}</span> <span class="mark">${item.score} <span class="marks-grey">/ 100</span></span>
-                    </div>
-                `;
-          document.getElementById("data").appendChild(div);
-        });
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  </script>
 </html>
