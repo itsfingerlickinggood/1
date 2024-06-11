@@ -11,123 +11,31 @@
       sizes="32x32"
       href="./Assets/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="/CSS/index.css" />
 
-    <title>Frontend Mentor | Interactive rating component</title>
-    <link rel="stylesheet" href="CSS/index.css" />
+    <title>Frontend Mentor | QR code component</title>
+
+    <style></style>
   </head>
   <body>
     <div class="container">
-      <!-- Rating state start -->
-
-      <div class="box-1">
-        <img
-          src="Assets/images/icon-star.svg"
-          alt=""
-          srcset=""
-          class="star-icon"
-        />
-        <div class="heading-1">How did we do?</div>
-        <div class="paragraph-1">
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </div>
-        <div class="button-numbers">
-          <button type="button" class="ratings" id="ratings" value="1">
-            1
-          </button>
-          <button type="button" class="ratings" id="ratings" value="2">
-            2
-          </button>
-          <button type="button" class="ratings" id="ratings" value="3">
-            3
-          </button>
-          <button type="button" class="ratings" id="ratings" value="4">
-            4
-          </button>
-          <button type="button" class="ratings" id="ratings" value="5">
-            5
-          </button>
-        </div>
-        <button type="button" class="submit-button">
-          <span class="submit-button-text">SUBMIT</span>
-        </button>
+      <div class="image">
+        <img src="/Assets/images/image-qr-code.png" alt="" class="qr-code" />
       </div>
-
-      <!-- Rating state end -->
-
-      <!-- Thank you state start -->
-
-      <div class="box-2">
-        <div>
-          <img
-            src="Assets/images/illustration-thank-you.svg"
-            alt=""
-            class="thank-you-icon"
-          />
-        </div>
-        <div class="rating-answer">
-          You selected <span class="rating-submit-answer"></span> out of 5
-        </div>
-        <div class="thank-you">Thank you!</div>
-        <div class="thank-msg">
-          <div class="tm-1">
-            We appreciate you taking the time to give a rating.
-          </div>
-          <div class="tm-2">
-            If you ever need more support, don't hesitate to
-          </div>
-          <div class="tm-3">get in touch!</div>
-        </div>
+      <div class="text1">
+        Improve your front-end skills by building projects
       </div>
-
-      <!-- Thank you state end -->
+      <div class="text2">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </div>
     </div>
 
     <div class="attribution">
       Challenge by
-      <a
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        rel="noopener"
-        >Frontend Mentor</a
-      >. Coded by X.
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener">Frontend Mentor</a
+      >. Coded by X</a>.
     </div>
   </body>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const ratingSubmitAnswer = document.querySelector(
-        ".rating-submit-answer"
-      );
-      const buttons = document.querySelectorAll(".ratings");
-      const box1 = document.querySelector(".box-1");
-      const box2 = document.querySelector(".box-2");
-      box2.style.display = "none";
-      const submitButton = document.querySelector(".submit-button");
-      let activeButton = null;
-      let selectedRating = null;
-
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          if (activeButton) {
-            activeButton.style.backgroundColor = "hsl(213, 19%, 18%)";
-            activeButton.style.color = "white";
-          }
-          button.style.backgroundColor = "white";
-          button.style.color = "black";
-          activeButton = button;
-          selectedRating = button.value;
-        });
-      });
-
-      submitButton.addEventListener("click", () => {
-        if (selectedRating) {
-          ratingSubmitAnswer.textContent = selectedRating;
-          box1.style.display = "none";
-          box2.style.display = "block";
-        } else {
-          alert("Please select a rating before submitting.");
-        }
-      });
-    });
-  </script>
 </html>
