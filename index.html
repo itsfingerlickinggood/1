@@ -9,33 +9,80 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./Assets/images/favicon-32x32.png"
+      href="Assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="CSS/index.css"/>
 
-    <title>Frontend Mentor | QR code component</title>
+    <title>Frontend Mentor | NFT preview card component</title>
 
-    <style></style>
+    <link rel="stylesheet" href="CSS/index.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="image">
-        <img src="./Assets/images/image-qr-code.png" alt="" class="qr-code" />
-      </div>
-      <div class="text1">
-        Improve your front-end skills by building projects
-      </div>
-      <div class="text2">
-        Scan the QR code to visit Frontend Mentor and take your coding skills to
-        the next level
+    <div class="container-first">
+      <div class="container-1">
+        <div class="container-2">
+          <div class="image-main">
+            <img
+              src="Assets/images/image-equilibrium.jpg"
+              alt=""
+              class="image-main-main normal"
+            />
+            <div class="container-bg-hover">
+              <img src="Assets/images/icon-view.svg" alt="" class="hover" />
+            </div>
+          </div>
+          <div class="text1">Equilibrium #3429</div>
+          <div class="paragraph">
+            Our Equilibrium collection promotes balance and calm.
+          </div>
+          <div class="text2">
+            <div class="wallet-balance">
+              <img
+                src="Assets/images/icon-ethereum.svg"
+                alt=""
+                class="ethereum-icon"
+              />
+              <span class="number">0.041 ETH</span>
+            </div>
+            <div class="time-left">
+              <img
+                src="Assets/images/icon-clock.svg"
+                alt=""
+                class="clock-icon"
+              />
+              <span class="time-left-number">3 days left</span>
+            </div>
+          </div>
+          <svg class="thin-line" height="0.5">
+            <line
+              x1="0"
+              y1="0"
+              x2="90%"
+              y2="0"
+              style="stroke: rgb(255, 255, 255); stroke-width: 0.5"
+            />
+          </svg>
+          <div class="user-profile-main">
+            <img
+              src="Assets/images/image-avatar.png"
+              alt=""
+              class="user-profile"
+            />
+          </div>
+          <div class="user-name">
+            Creation of <span class="user-name-name">Jules Wyvern</span>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        rel="noopener">Frontend Mentor</a
-      >. Coded by X</a>.
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by X.
     </div>
   </body>
 </html>
