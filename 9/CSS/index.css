@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-size: 11px;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+.container-first {
+  width: 400px;
+  height: 630px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(220, 54%, 11%);
+  border-radius: 50px;
+}
+
+.container-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  height: 560px;
+  padding: 10px;
+  background-color: hsl(217, 54%, 11%);
+  border-radius: 10px;
+}
+
+.container-2 {
+  background-color: hsl(216, 50%, 16%);
+  width: 280px;
+  height: 510px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 20px;
+  color: hsl(215, 32%, 27%);
+}
+
+.image-main-main {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px hsl(201, 49%, 14%);
+}
+
+.text1 {
+  color: white;
+  font-weight: 600px;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.paragraph {
+  color: hsl(215, 51%, 70%);
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.wallet-balance,
+.time-left {
+  display: inline-block;
+}
+
+hr {
+}
+
+.user-profile-main,
+.user-name {
+  display: inline-block;
+}
+
+.user-profile-main {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 10px;
+  padding: 0.1px;
+}
+
+.user-profile-main img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.user-name {
+  color: rgba(0, 255, 255, 0.5);
+  font-size: 15px;
+  position: absolute;
+  top: 89%;
+  left: 20%;
+}
+
+.user-name-name {
+  color: white;
+  font-size: 15px;
+}
+
+.wallet-balance {
+  margin-top: 10px;
+}
+
+.wallet-balance img {
+  height: 15px;
+}
+
+.wallet-balance .number {
+  font-size: 15px;
+  color: cyan;
+  margin-left: 10px;
+}
+
+.time-left .clock-icon {
+  height: 15px;
+  margin-left: 80px;
+}
+.time-left .time-left-number {
+  font-size: 15px;
+  color: hsl(215, 51%, 70%);
+}
+
+.text1:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+.user-name-name:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+.image-main img:hover {
+  cursor: pointer;
+}
+
+.container-bg-hover img {
+  height: 20px;
+  position: absolute;
+  top: 49%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.container-bg-hover {
+  background-color: rgba(0, 255, 255, 0.46);
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  width: 280px;
+  height: 280px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.container-bg-hover:hover,
+.container-bg-hover:hover img {
+  opacity: 1;
+}
