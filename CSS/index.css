@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 .attribution {
   font-size: 11px;
@@ -10,140 +11,94 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-  font-size: 16px;
 }
 
-* {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
 body {
-  background-image: url("https://github.com/itsfingerlickinggood/1/blob/9d9fb82d353c0929dab488da7c77bfe2da709232/Assets/images/pattern-background-desktop.svg");
+  background-image: url("/Assets/images/bg-desktop.svg");
+  background-color: hsl(257, 40%, 49%);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 110%;
-  margin-top: 20%;
-  background-color: hsl(225, 100%, 94%);
+  background-size: 90%;
+}
+.column-1,
+.column-2 {
+  position: absolute;
 }
 
-.container {
-  position: absolute;
+.column-1 {
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 600px;
-  background-color: white;
-  border-radius: 20px;
-  text-align: center;
-  padding-bottom: 30px;
+}
+.column-2 {
+  width: 36%;
+  height: 400px;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
 }
 
-.main-image {
-  width: 400px;
+.text-1 {
+  font-weight: 600;
+  font-size: 42px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  line-height: 60px;
 }
-
-.img-1 {
-  border-radius: 20px 20px 0 0;
-  width: 400px;
-}
-
-.text1 {
+.para-1 {
   margin-top: 30px;
-  font-weight: 900;
-  font-size: 25px;
-}
-.text1-para {
-  margin-top: 20px;
-  color: hsl(224, 23%, 55%);
-  font-weight: 450;
-  word-spacing: 1px;
-  line-height: 25px;
   margin-bottom: 30px;
+  font-weight: 350;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 30px;
 }
-
-.music-icon,
-.plan-price-full,
-.change-link {
-  display: inline-block;
-}
-
-.plan-selector {
-  background-color: hsl(225, 100%, 98%);
-  padding: 10px;
-  width: 300px;
-  height: 65px;
-  margin: auto;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-.music-icon {
+button {
+  margin-top: 10px;
   position: absolute;
-  top: 64.5%;
-  left: 15%;
-}
-
-.plan-price-full {
-  position: absolute;
-  left: 33%;
-  top: 65%;
-}
-.change-link {
-  position: absolute;
-  left: 73%;
-  top: 66.5%;
-}
-
-.change-link:hover a {
-  color: hsl(245, 75%, 52%);
-}
-
-.change-link a {
-  color: black;
-  font-weight: 650;
-}
-
-.plan-name {
-  font-weight: 800;
-}
-
-.plan-price {
-  color: hsl(224, 23%, 55%);
+  left: 13%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 45px;
+  border-radius: 100px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  text-align: left;
-  font-size: 14px;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
+  color: hsl(300, 32%, 49%);
   font-weight: 500;
 }
 
-.payment-button {
-  height: 45px;
-  width: 320px;
-  padding: 10px;
-  margin: 10px 0;
-  margin-bottom: 40px;
-  border: none;
-  border-radius: 10px;
-  background-color: hsl(245, 75%, 52%);
-  color: white;
-  font-size: 14px;
-  font-weight: 800;
-  box-shadow: 0px 20px 20px 0px hsl(225, 29%, 85%);
-  cursor: pointer;
+.logo {
+  position: absolute;
+  left: 6%;
+  top: 5%;
 }
 
-.cancel-order-link {
-  font-weight: 900;
-  color: hsl(224, 23%, 55%);
-  font-size: 14px;
-  cursor: pointer;
+.logos img {
+  height: 25px;
+  filter: invert(100%);
 }
 
-@media screen and (max-height: 768px) {
-  body {
-    width: auto;
-    height: auto;
-  }
+.logo-container {
+  height: 40px;
+  width: 40px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top: 90%;
+  transform: translateX(-50%);
+}
+
+.container-1 {
+  left: 82%;
+}
+.container-2 {
+  left: 86%;
+}
+.container-3 {
+  left: 90%;
 }
