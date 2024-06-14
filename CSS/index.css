@@ -14,7 +14,7 @@
 }
 
 body {
-  background-image: url("https://raw.githubusercontent.com/itsfingerlickinggood/1/7f1b67d7f2bf0d21122c7806649beed67c51d671/Assets/images/bg-desktop.svg");
+  background-image: url(../Assets/images/img.svg);
   background-color: hsl(257, 40%, 49%);
   background-repeat: no-repeat;
   background-size: 90%;
