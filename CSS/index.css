@@ -36,7 +36,7 @@ body {
 
 .box-2-image {
   position: relative;
-  background: url("https://github.com/itsfingerlickinggood/1/blob/2f83eb63060e68bc3fca9bace37d3404e4ce4100/images/image-header-desktop.jpg");
+  background: url("https://raw.githubusercontent.com/itsfingerlickinggood/1/7a223d312e4a118fbfd609113abd7517d0e75d0d/Assets/images/image-header-desktop.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,7 +102,7 @@ body {
   }
   .box-2-image {
     border-radius: 20px 20px 0 0;
-    background: url("https://github.com/itsfingerlickinggood/1/blob/2f83eb63060e68bc3fca9bace37d3404e4ce4100/images/image-header-mobile.jpg");
+    background: url("https://raw.githubusercontent.com/itsfingerlickinggood/1/7a223d312e4a118fbfd609113abd7517d0e75d0d/Assets/images/image-header-mobile.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
