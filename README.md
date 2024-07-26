@@ -40,4 +40,4 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Useful resources
 
-- [Example resource 1](https://www.openai.com) - ChatGPT 
+- [Example resource 1](https://www.openai.com) - ChatGPT
