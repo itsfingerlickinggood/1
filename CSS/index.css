@@ -1,5 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  background: url("/Assets/images/bg-pattern-bottom-desktop.svg") no-repeat
+      bottom right,
+    url("/Assets/images/bg-pattern-top-desktop.svg") no-repeat top left;
+
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -11,104 +23,181 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
-body {
-  font-family: "Kumbh Sans", sans-serif;
-  background-position: top left;
-  background-size: 10%;
-  background-color: hsl(185, 75%, 39%);
-  overflow: hidden;
-  font-size: 18px;
-}
-
 .container {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 425px;
-  height: 475px;
-  background-color: white;
-  border-radius: 20px;
-  overflow: hidden;
+  width: 78rem;
+  height: 35rem;
+
+  padding: 50px;
 }
 
-.bg {
-  display: inline-block;
-  z-index: -999;
-  position: absolute;
-}
-.bg-1 {
-  top: -50%;
-  left: -20%;
+.top {
+  display: flex;
+  flex: 2;
 }
 
-.bg-2 {
-  top: 40%;
+.left {
+  width: 50%;
+}
+
+.heading-one {
+  font-size: 70px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+.para-one {
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  width: 23rem;
+  color: hsl(303, 10%, 53%);
+}
+
+.reviews {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(300, 24%, 96%);
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.reviews span {
+  margin-left: 20px;
+}
+
+.r-2 {
   left: 60%;
 }
-
-.img-1 {
-  width: 100%;
+.r-3 {
+  left: 70%;
 }
 
-.image-container {
-  background-color: rgb(255, 255, 255);
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
-  margin: 0;
-  padding: 10px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.profile-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  object-fit: cover;
-  object-position: center;
+.bottom img {
+  border-radius: 50%;
+  height: 50px;
+  margin: 0 30px 0 -120px;
 }
 
-.a1,
-.bottom,
-.place {
-  position: relative;
-  left: 35%;
+.bottom-container {
+  display: flex;
+  gap: 50px;
 }
 
-.a1 {
-  margin-top: -40px;
-  margin-bottom: 20px;
+.box {
+  background-color: hsl(300, 43%, 22%);
+  width: 300px;
+  height: 170px;
+  font-size: 16px;
+  padding: 40px;
+  border-radius: 10px;
 }
-.a1 .name {
-  font-weight: 700;
-}
-.a1 .age {
-  font-weight: 400;
-}
-.place {
-  left: 42%;
+.box-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
-.box- {
-  display: inline-block;
-  margin-top: 25px;
-  margin-right: 60px;
-}
-.number {
+.name {
+  color: white;
   font-weight: 700;
-  font-size: 25px;
+}
+.buyer {
+  color: hsl(333, 80%, 67%);
+}
+.box-bottom {
+  color: white;
+  font-weight: 500;
+  line-height: 25px;
 }
 
-.text {
-  font-weight: 300;
-  font-size: 15px;
-  display: grid;
-  place-content: center;
+.box-2 {
+  margin-top: 2%;
+}
+.box-3 {
+  margin-top: 4%;
 }
 
-.box-1 {
-  margin-left: -100px;
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+    top: 50%;
+  }
+
+  .heading-one {
+    font-size: 50px;
+  }
+
+  .para-one {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .reviews {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .box {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    top: 70%;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading-one {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .para-one {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .reviews {
+    width: 75%;
+    padding: 10px;
+    margin-left: -20px;
+  }
+
+  .box {
+    width: 70%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .bottom-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
